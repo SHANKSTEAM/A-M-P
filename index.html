@@ -88,10 +88,6 @@
       }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <meta
-      name="google-site-verification"
-      content="lTggCzO74WRKL51fCbL58tmZzWjNdZ70fYmC9xmvzsA"
-    />
     <link
       rel="preload"
       as="image"
@@ -101,8 +97,8 @@
     />
     <script
       async
-      custom-element="amp-ad"
-      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+      custom-element="amp-iframe"
+      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
     ></script>
   </head>
   <body>
@@ -117,18 +113,14 @@
       srcset="images/hummingbird-640w.webp 640w,images/hummingbird-320w.webp 320w"
     >
     </amp-img>
-    <amp-ad
-      type="a9"
-      data-amzn_assoc_ad_mode="auto"
-      data-divid="amzn-assoc-ad-fe746097-f142-4f8d-8dfb-45ec747632e5"
-      data-recomtype="async"
-      data-adinstanceid="fe746097-f142-4f8d-8dfb-45ec747632e5"
-      width="300"
-      height="250"
-      data-aax_size="300x250"
-      data-aax_pubname="test123"
-      data-aax_src="302"
+    <amp-iframe
+      width="200"
+      height="100"
+      sandbox="allow-scripts allow-same-origin"
+      layout="responsive"
+      frameborder="0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyAS599A2GGPKTmtNr9CptD61LE4gN6oQ&q=iceland"
     >
-    </amp-ad>
+    </amp-iframe>
   </body>
 </html>
