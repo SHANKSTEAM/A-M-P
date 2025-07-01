@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presentación - Palomas</title>
+  <style>
+    :root {
+      --slide1: #1e3d59;
+      --slide2: #f5f0e1;
+      --slide3: #f0a500;
+      --slide4: #7bdff2;
+      --slide5: #b2f7ef;
+      --slide6: #eff7f6;
+      --slide7: #ffd6e0;
+      --slide8: #d0f4de;
+      --slide9: #e4c1f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+      height: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+    }
+
+    .slide h2 {
+      font-size: 2.4em;
+      margin-bottom: 25px;
+    }
+
+    .slide p {
+      font-size: 1.4em;
+      max-width: 800px;
+      line-height: 1.8;
+    }
+
+    .slide img {
+      max-width: 80%;
+      max-height: 300px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Special slide styles */
+    .title-slide {
+      background-image: url('https://cdn.pixabay.com/photo/2025/01/30/15/43/ai-generated-9370436_1280.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .title-slide h1 {
+      font-size: 3.5em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .title-slide h2 {
+      font-size: 2em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Powered slide */
+    .powered-slide {
+      background-color: #000;
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      line-height: 1.2;
+    }
+
+    .nav-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .nav-buttons button {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      font-size: 2em;
+      padding: 15px;
+      margin: 0 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #1abc9c;
+    }
+
+    @media (max-width: 600px) {
+      .slide h2 { font-size: 1.8em; }
+      .slide p { font-size: 1.1em; padding: 0 10px; }
+      .title-slide h1 { font-size: 2.2em; }
+      .title-slide h2 { font-size: 1.4em; }
+      .powered-slide {
+        font-size: 2em;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    /* Custom background colors */
+    .slide-1  { background-color: var(--slide1); color: white; }
+    .slide-2  { background-color: var(--slide2); }
+    .slide-3  { background-color: var(--slide3); }
+    .slide-4  { background-color: var(--slide4); }
+    .slide-5  { background-color: var(--slide5); }
+    .slide-6  { background-color: var(--slide6); }
+    .slide-7  { background-color: var(--slide7); }
+    .slide-8  { background-color: var(--slide8); }
+    .slide-9  { background-color: var(--slide9); }
+  </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slides" id="slides">
+      
+      <!-- Powered by Slide -->
+      <section class="slide powered-slide">
+        EL GRUPO SATANICO<br>
+        <small style="font-size: 0.6em; letter-spacing: normal;">Producción</small>
+      </section>
+
+      <section class="slide title-slide">
+        <h1>CONTROL DE PLAGAS</h1>
+        <h2>🐦 PALOMAS</h2>
+      </section>
+
+      <section class="slide slide-1">
+        <h2>🔍 IDENTIFICAR</h2>
+        <p><strong>Nombre científico:</strong> <em>Columba livia</em><br>
+        <strong>Nombre común:</strong> Paloma doméstica</p>
+      </section>
+
+      <section class="slide slide-2">
+        <h2>📋 DESCRIBIR</h2>
+        <p>Son aves de tamaño mediano, con un cuerpo robusto. Son conocidas por su capacidad de adaptación al entorno urbano, donde encuentran fácil acceso a alimentos y lugares para anidar.</p>
+      </section>
+
+      <section class="slide slide-3">
+        <h2>🧬 BIOLOGÍA</h2>
+        <p>Las palomas tienen una esperanza de vida de entre 3 y 6 años en entornos urbanos. Son animales sociales y suelen vivir en bandadas.</p>
+      </section>
+
+      <section class="slide slide-4">
+        <h2>🔄 CICLO BIOLÓGICO</h2>
+        <p>Se reproducen durante todo el año. La hembra pone entre 1 y 2 huevos que incuban ambos padres durante unos 18 días. Los pichones abandonan el nido en unas 4 semanas.</p>
+      </section>
+
+      <section class="slide slide-5">
+        <h2>🏛️ DAÑOS A LAS INFRAESTRUCTURAS</h2>
+        <p>Sus excrementos son altamente corrosivos y pueden dañar edificios, monumentos, sistemas de ventilación y equipos eléctricos.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Pigeon_Droppings.jpg/640px-Pigeon_Droppings.jpg" alt="Daños de excrementos de paloma">
+      </section>
+
+      <section class="slide slide-6">
+        <h2>🧫 DAÑOS A LA SALUD HUMANA</h2>
+        <p>Las palomas pueden transmitir enfermedades como criptococosis, histoplasmosis y psitacosis. También pueden transportar parásitos como ácaros y pulgas.</p>
+      </section>
+
+      <section class="slide slide-7">
+        <h2>🛠️ MÉTODOS DE CONTROL</h2>
+        <p>Incluyen el uso de pinchos, redes anti-palomas, repelentes sonoros, trampas y control reproductivo con piensos esterilizantes. Nunca se recomienda el uso de venenos.</p>
+      </section>
+
+      <section class="slide slide-8">
+        <h2>🚫 MEDIDAS PREVENTIVAS</h2>
+        <p>Evitar dejar comida expuesta, sellar puntos de anidación, instalar dispositivos disuasorios y mantener una limpieza adecuada en áreas urbanas.</p>
+      </section>
+
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">←</button>
+      <button onclick="nextSlide()">→</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    function updateSlide() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      if (index < totalSlides - 1) index++;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      if (index > 0) index--;
+      updateSlide();
+    }
+
+    // Auto advance from powered slide after 5 seconds
+    setTimeout(() => {
+      if (index === 0) {
+        nextSlide();
+      }
+    }, 5000);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    });
+  </script>
+
+</body>
+</html>
